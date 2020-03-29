@@ -134,7 +134,7 @@ which is convex.
     <img src="Assets/Img/fig210.png">
 </div>
 
-<div align="center" >
+<div align="center">
 <img src="Assets/Img/pnormdark_final4New3.gif" width="400">
 <p> contour plot of Norm cones, from 1.01 to inf norm</p>
 </div>
