@@ -21,14 +21,16 @@ Before looking at the notes lets take a high-level view over each of the parts o
 
 * Part III go over some of the most important algorithm which are the workhorses behind these covex optimization packages like CVXOPT, CVXPY, APOPT etc in chapter 9 we looked at several gradient based methods to solve unconstrained minimiztion problems like our good o'l  gradient descent and also looked at methods which uses second order methods like newton's methods etc. we also looked at the theory of self concordence which helps us to analyse newton's method also the method we will look at in later chapters, in chpater 10 we again use newton's method to solve equality constaint minimization problem we also looked at some of the implementation details which might prove useful if you are using this to create your own library or wanna understand how other library implements these concepts... lastly, in the final chapter we looked at on of the most important method in the modern convex optimization litrature is the concept of interior point method which helps us to solve the inequality constriant minimization problem by recursively solving the equaltiy constraint problem using the method called 'barrier method' although one might agruge that the explaination of interior-point methods isn't complete enough in this book but more like an introduction and that would be correct so please don't take this chapter as end all be all of this methods (if you want to dive deep into this concept then i really like this <a href="https://www.amazon.in/Numerical-Optimization-Jorge-Nocedal/dp/0387303030" >book by Nocedal & Wright</a>. by the way, there is also a <a href="https://youtu.be/7CMWdO5dgdQ">video</a> about it which you might find useful while going thorugh that book ) also, one more thing, i bet by the end of this chapter you will start respecting the least-sqares methods again.. :D
 
-
-
-
-
-
+## Notes
 
 * Chapter 1 : Introduction ( doesn't need Notes)
 * <a href="ConvexOptimization/Ch2.ipynb">Chapter 2 : Convex Set</a>
-* <a href="ConvexOptimization/Ch3.ipynb">Chapter 3 : Convex Function</a>
+* <a href="ConvexOptimization/Ch3.ipynb">Chapter 3 : Convex Function</a>(Still a work in progress)
 * <a href="https://colab.research.google.com/drive/1pdVXgEhGinBcPqQR03TBvV1h1pu78G7c?authuser=1#scrollTo=YlMiImpCthDc">Chapter 4 : Convex Optimization Problem</a>
 * <a href="ConvexOptimization/Ch5.ipynb">Chapter 5 : Duality</a>
+
+<hr></hr>
+
+If you found any mistake or have any suggestion then please let me know by filing an issue..
+
+Have a beautiful day :D
