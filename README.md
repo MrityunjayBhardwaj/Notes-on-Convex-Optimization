@@ -31,6 +31,6 @@ Before looking at the notes lets take a high-level view over each of the parts o
 
 <hr></hr>
 
-If you found any mistake or have any suggestion then please let me know by filing an issue..
+If you found any mistake or have any suggestion then please let me know by creating an issue..
 
 Have a beautiful day :D
