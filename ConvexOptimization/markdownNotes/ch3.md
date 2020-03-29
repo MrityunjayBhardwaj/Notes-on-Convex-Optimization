@@ -6,9 +6,11 @@
     <img src="Assets/Img/fig31.png" width="400">
 </div>
 
-A function $f: \mathbf{R}^n \rightarrow \mathbf{R}$ is *convex* if **dom** $f$ is a convex set and if for all $x$, $y \in \bold{dom}f$, and $\theta$ with $0 \leq \theta \leq 1$, we have
+A function $f: \mathbf{R}^n \rightarrow \mathbf{R}$ is *convex* if **dom** $f$ is a convex set and if for all $x$, $y \in \mathbf{dom}f$, and $\theta$ with $0 \leq \theta \leq 1$, we have
 
-$$ \color{blue}{f(\theta_x + (1-\theta)y)}  \color{black}\hspace{2pt}{\leq}\hspace{2pt} \color{red}{\theta f(x) + (1-\theta)f(y)}$$
+$$
+\color{blue}{f(\theta_x + (1-\theta)y)}  \color{black}\hspace{2pt}{\leq}\hspace{2pt} \color{red}{\theta f(x) + (1-\theta)f(y)}
+$$
 
 this inequality is known as **jensen's inequality**.
 
@@ -35,7 +37,7 @@ apart from jensen's inequality, we can check wether a function is convex or not 
 
 $$ f(y) \geq f(x) + \nabla f(x)^T(y-x)$$
 
-this inequaltiy shows that from local information about a convex funtion we can derive global information. this property exmplains some of th remarkable properties of convex functions for example, this inequlatiy shows that if $\nabla f(x) =0$, then for all $y \in \bold{dom}f$, $x$ is a global minimizer of the function $f$ 
+this inequaltiy shows that from local information about a convex funtion we can derive global information. this property exmplains some of th remarkable properties of convex functions for example, this inequlatiy shows that if $\nabla f(x) =0$, then for all $y \in \mathbf{dom}f$, $x$ is a global minimizer of the function $f$ 
 
 we can also check for concavity by using 
 
@@ -222,7 +224,7 @@ $$ f(\theta x + (1-\theta)y) = \max\{ f(x), f(y)\}$$
 
 * $f$ is nondecreeasing
 * $f$ is nonincreasing
-* there is a point $c \in \bold{dom}f$ such that for $t\leq c$ (and $t \in \bold{dom}f$), $f$ is nonincreasing, and for $t \geq c$ (and $t \in \bold{dom}f$), $f$ is nondecreasing.
+* there is a point $c \in \mathbf{dom}f$ such that for $t\leq c$ (and $t \in \mathbf{dom}f$), $f$ is nonincreasing, and for $t \geq c$ (and $t \in \mathbf{dom}f$), $f$ is nondecreasing.
 
 ## Differentiable quasiconvex functions
 just like in convex function, we can also use the derivative information to check wether a function is quasi-convex or not:
@@ -237,7 +239,7 @@ write.
 
 ## Log-concave and log-convex functions
 
-A function $f: \mathbf{R}^n \rightarrow \mathbf{R}$ is logrithmically concave or log-concave if $f(x) > 0$ for all $x \in \bold{dom}f$ and $\log f$ is concave. It is said to be logrithmically convex concave. 
+A function $f: \mathbf{R}^n \rightarrow \mathbf{R}$ is logrithmically concave or log-concave if $f(x) > 0$ for all $x \in \mathbf{dom}f$ and $\log f$ is concave. It is said to be logrithmically convex concave. 
 
 we can express log-concavity more formally : a function $f: \mathbf{R}^n \rightarrow \mathbf{R}$, with convex domain and $f(x) > 0, \forall x \in \mathbf{dom} f$ , is log-concave iff $\forall x,y \in \mathbf{dom}f$ and $0 \leq \theta \leq 1$, we have
 

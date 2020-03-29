@@ -40,7 +40,7 @@ $$
     I_{-}(u) = \left \{
     \begin{matrix}
     0 & u \leq 0 \\
-    \infin & u > 0, 
+    \infty & u > 0, 
     \end{matrix}
     \right \}
     $$
@@ -48,7 +48,9 @@ $$
     and $I_0$ is the indicator function of {0}. \\
     Now if we reformulate (5.3) we replace the function $I_{-}(u)$ with the linear function $\lambda_i u_i$ where $\lambda_i \geq 0$ and the function $I_0(u)$ with $\nu_iu_i$
 
-    // TODO: add 5.4
+    $$
+    \text { minimize } \quad L(x, \lambda, \nu)=f_{0}(x)+\sum_{i=1}^{m} \lambda_{i} f_{i}(x)+\sum_{i=1}^{p} \nu_{i} h_{i}(x)
+    $$
 
     here, as you can see, we use a linear or 'soft' displeasure function in place of $I_{-}$ and $I_0$ which act like an underestimator of the indicator function.
 
