@@ -1,6 +1,7 @@
 # Chapter 5: Duality
 
 We consider an optimization problem in the standard form (4.1):
+
 $$
 \begin{array}{ll}
 \operatorname{minimize} & f_{0}(x) \\
@@ -8,6 +9,7 @@ $$
 & h_{i}(x)=0, \quad i=1, \ldots, p
 \end{array}\tag{5.1}
 $$
+
 with variable $x \in \mathbf{R}^{n} .$ We assume its domain $\mathcal{D}=\bigcap_{i=0}^{m} \operatorname{dom} f_{i} \cap \bigcap_{i=1}^{p} \operatorname{dom} h_{i}$
 is nonempty, and denote the optimal value of (5.1) by $p^{*} .$ We do not assume the problem (5.1) is convex.
 
