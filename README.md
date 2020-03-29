@@ -2,6 +2,11 @@
 ## Convex Optimization Book
 
 
+<div align="center">
+<img src="ConvexOptimization/Assets/Img/cvx_opt_book.jpeg">
+<p>source: <a href="https://sg.carousell.com/p/convex-optimization-stephen-boyd-lieven-vandenberghe-200347223/">carousell.com</a></p>
+</div>
+
 So, the book is divided into 3 parts, 
 
 * Part I : Theory/Analysis
