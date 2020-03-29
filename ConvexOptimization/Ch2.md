@@ -1,6 +1,6 @@
 ## Affine Sets
 
-Any set that contains entire line (not just line segment) is an affine set eg. $C \subseteq \mathbb{R}^n$ is an affine set
+Any set that contains entire line (not just line segment) is an affine set eg. $$C \subseteq \mathbb{R}^n$$ is an affine set
 
 we can check if a set is affine or not by passing a line between 2 points and interpolate(also extrapolate) between them as long as they reside in the same set i.e, $\theta x_1 + (1-\theta)x_2 \in C$. where the coefficient sum to 1.
 
@@ -11,7 +11,7 @@ we can check if a set is affine or not by passing a line between 2 points and in
 
 The set of all affine combinations of points in some set $C \subseteq \mathbb{R}^n$ is called the *affine hull* of $C$, and denoted **aff** $C$:
 
-$$ \bold{aff}\hspace{2pt} C = \{ \theta_1x_1 + ...... \theta_k x_k| x_1, ......, x_k \in C, \theta_1 + ...... + \theta_k = 1 \}$$
+$$ \mathbf{aff}\hspace{2pt} C = \{ \theta_1x_1 + ...... \theta_k x_k| x_1, ......, x_k \in C, \theta_1 + ...... + \theta_k = 1 \}$$
 
 
 the *affine dimension* of a set $C$ as the dimension of its affine hull.
@@ -28,7 +28,7 @@ $$\theta x_1 + (1-\theta)x_2$$
 
 The convex hull of a set $C$, dentoed **conv** $C$, is the set of all convex combinations of points in $C$:
 
-$$ \bold{conv}\hspace{2pt} C = \{ \theta_1x_1 + ...... \theta_k x_k| x_1 \in C, \theta_i \geq 0,i=1,....,k, \theta_1 + ...... + \theta_k = 1 \}$$
+$$ \mathbf{conv}\hspace{2pt} C = \{ \theta_1x_1 + ...... \theta_k x_k| x_1 \in C, \theta_i \geq 0,i=1,....,k, \theta_1 + ...... + \theta_k = 1 \}$$
 
 <div align="center" font-align="center">
     <img src="Assets/Img/fig23.png">
@@ -127,13 +127,16 @@ $$\{x| ||x-x_c|| \leq r\}$$
 
 which is convex.
 
-// TODO: add my gif.
 
 ### Norm cones
 
 <div align="center" font-align="center">
     <img src="Assets/Img/fig210.png">
-    <i>something</i>
+</div>
+
+<div align="center" >
+<img src="Assets/Img/pnormdark_final4New3.gif" width="400">
+<p> contour plot of Norm cones, from 1.01 to inf norm</p>
 </div>
 
 essentially, if we view $n$ dimensional contour plots of norm in $n+1$ dimensions, we essentially get a norm cone.
@@ -174,7 +177,7 @@ A bounded polyhedra is sometimes called a **polytope**.
 
 Suppose the k+1 points v_0,.....,v_k \in \mathbb{R}^k are linearly independent. the simplex determined by them is given by
 
-$$ C = \bold{conv}\{v_0,....,v_k\} = \{ \theta_0v_0 + ...... + \theta_kv_k | \theta \geq 0, \bold{1}^T\theta = 1 \}$$
+$$ C = \mathbf{conv}\{v_0,....,v_k\} = \{ \theta_0v_0 + ...... + \theta_kv_k | \theta \geq 0, \mathbf{1}^T\theta = 1 \}$$
 
 for e.g let k = 2 which means we have $k+1$ points, $x_1,x_2,x_3$ respectively. Now  by follow above defination, our simplex will look like this :-
 
@@ -229,9 +232,8 @@ where $x \in \mathbf{R}^{n}$ and $y_{i} \in \mathbf{R}^{m} .$ For $m=0,$ the par
 
 suppose we have a vector $v = [x_1,x_2,x_3]$ now, if we just divide all the components of $v$ by $x_3$ we get $[x_1/x_3,x_2/x_3,1]$ which we can rewrite it as $[x_1/x_3,x_2/x_3]$. here, we essentially reduce our vector in $R^3 \rightarrow R^n$ by dividing all the components by the last component and then drop the last component (because its just a constant $1$) more formally, 
 
-we define the perspective function $P: R^{n + 1} \rightarrow \mathbf{R}^n$, with domain $\bold{dom}\hspace{2pt} P = \mathbf{R}^n \times R_{++}$, as $P(z,t) = z/t$. The perspective function scales or normalizes vectors so the last component is one, and then drops the last component.
+we define the perspective function $P: R^{n + 1} \rightarrow \mathbf{R}^n$, with domain $\mathbf{dom}\hspace{2pt} P = \mathbf{R}^n \times R_{++}$, as $P(z,t) = z/t$. The perspective function scales or normalizes vectors so the last component is one, and then drops the last component.
 
-// TODO: addRemark 2.1
 
 <img src="Assets/Img/fig215.png">
 
@@ -282,7 +284,7 @@ $$ x \preceq y \Longleftrightarrow y -x \in K$$
 which we sometimes refer to non-strict generalized inequality.
 
 we also write $x\preceq_K y$ for $y\preceq_K x$. Similarly, we defined an associated strict partiial ordering by 
-$$ x \prec_K y \Longleftrightarrow y-x \in \bold{int}\hspace{1pt}K$$
+$$ x \prec_K y \Longleftrightarrow y-x \in \mathbf{int}\hspace{1pt}K$$
 
 
 ### componentwise inequality
@@ -392,7 +394,7 @@ Suppose $C$ and $D$ are nonempty disjoint convex sets, $i . e ., C \cap D=\empty
 
 the supporting hyperplane theorem, states that for any nonempty convex set $C,$ and any $x_{0} \in$ bd $C,$ there exists a supporting hyperplane to $C$ at $x_{0} .$
 
-if hyperplane that is on the boundry point $x_0$ of the set $C$ (i.e, $x_0 \in \bold{bd}C$) whose halfspace encolsed the entire set then it is said to be a supporting hyperplane.
+if hyperplane that is on the boundry point $x_0$ of the set $C$ (i.e, $x_0 \in \mathbf{bd}C$) whose halfspace encolsed the entire set then it is said to be a supporting hyperplane.
 
 ## Dual cones and generalized inequalities
 
